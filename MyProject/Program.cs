@@ -5,10 +5,10 @@
 //#define TASK_1
 //#define TASK_2
 //#define TASK_3
-//#define TASK_4
+#define TASK_4
 //#define TASK_5
 //#define TASK_6
-#define TASK_7
+//#define TASK_7
 
 
 using System;
@@ -109,9 +109,10 @@ try
 {
     number = Int32.Parse(Console.ReadLine());
     int count = 0;
-    for(int i = 0; number > 0; i++)
+    int copynumber = number;
+    for(int i = 0; copynumber > 0; i++)
     {
-        number /= 10;
+        copynumber /= 10;
         count++;
 
     }
@@ -135,6 +136,7 @@ for(int i = size - 1; i >= 0; i--)
     arr[i] = buffer;
     number /= 10;
 }
+
 
 int index1 = 0;
 int index2 = 0;
